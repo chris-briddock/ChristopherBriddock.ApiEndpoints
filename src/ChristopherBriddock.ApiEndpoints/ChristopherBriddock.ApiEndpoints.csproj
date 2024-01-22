@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+	</PropertyGroup>
+	
+  <PropertyGroup>
+    <PackageId>ChristopherBridock.ApiEndpoints</PackageId>
+    <Title>ChristoperBriddock.ApiEndpoints</Title>
+    <Authors>Steve Smith (@ardalis), Christopher Briddock</Authors>
+    <Description>A fork of Ardalis's ApiEndpoints. An alternative to Controllers for ASP.NET Core API Endpoints.</Description>
+    <Summary>Controllers promote creating bloated classes that lack cohesion. This project provides a simpler alternative that follows SOLID principles. An alternative to Controllers for ASP.NET Core API Endpoints.</Summary>
+    <PackageTags>aspnet asp.net aspnetcore asp.net core api web api rest endpoint controller</PackageTags>
+    <PackageReleaseNotes>Add support for request parameters object and request body object.</PackageReleaseNotes>
+    <Version></Version>
+    <AssemblyName>ChristopherBriddock.ApiEndpoints</AssemblyName>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ardalis.ApiEndpoints.CodeAnalyzers" Version="4.0.0" />
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="LICENSE.txt" Pack="true" PackagePath="$(PackageLicenseFile)" />
+  </ItemGroup>
+
+</Project>
