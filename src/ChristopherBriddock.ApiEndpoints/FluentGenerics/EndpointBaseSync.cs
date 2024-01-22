@@ -1,4 +1,6 @@
-﻿namespace ChristopherBriddock.ApiEndpoints;
+﻿using Microsoft.AspNetCore.Mvc;
+
+namespace ChristopherBriddock.ApiEndpoints;
 
 /// <summary>
 /// A base class for an endpoint that accepts parameters.
