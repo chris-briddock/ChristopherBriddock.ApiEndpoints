@@ -21,7 +21,7 @@ jobs:
       with:
         dotnet-version: 8.0.x
     - name: Build & Restore
-      run: dotnet build --configuration Release src/ChristopherBriddock.ApiEndpoints.sln -p:Version=${{ secrets.RELEASE_VERSION }}
+      run: dotnet build --configuration Release src/ChristopherBriddock.ApiEndpoints/ChristopherBriddock.ApiEndpoints.sln -p:Version=${{ secrets.RELEASE_VERSION }}
     - name: Publish
       run: dotnet publish src/ChristopherBriddock.ApiEndpoints/ChristopherBriddock.ApiEndpoints.csproj -c Release -p:Version=${{ secrets.RELEASE_VERSION }}
     - name: Create the package
