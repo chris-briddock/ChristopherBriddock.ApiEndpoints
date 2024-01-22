@@ -1,4 +1,11 @@
-﻿namespace Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ApplicationModels;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+
+namespace Microsoft.Extensions.DependencyInjection;
 
 public static class MvcOptionsExtensions
 {

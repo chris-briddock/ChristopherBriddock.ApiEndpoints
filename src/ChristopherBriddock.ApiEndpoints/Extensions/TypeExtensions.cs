@@ -1,4 +1,6 @@
-﻿namespace System;
+﻿using System.Collections.Generic;
+
+namespace System;
 
 internal static class TypeExtensions
 {
