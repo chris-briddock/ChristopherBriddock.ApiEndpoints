@@ -5,7 +5,7 @@
 	</PropertyGroup>
 	
   <PropertyGroup>
-    <PackageId>ChristopherBridock.ApiEndpoints</PackageId>
+    <PackageId>ChristopherBriddock.ApiEndpoints</PackageId>
     <Title>ChristoperBriddock.ApiEndpoints</Title>
     <Authors>Steve Smith (@ardalis), Christopher Briddock</Authors>
     <Description>A fork of Ardalis's ApiEndpoints. An alternative to Controllers for ASP.NET Core API Endpoints.</Description>
