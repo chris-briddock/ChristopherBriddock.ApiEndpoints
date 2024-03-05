@@ -7,7 +7,7 @@ namespace ChristopherBriddock.ApiEndpoints.Sample.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : EndpointBaseAsync
                                             .WithRequest<WeatherRequest>
-                                            .WithParam<WeatherRequestParams>
+                                            .WithQuery<WeatherRequestQuery>
                                             .WithActionResult
     {
         private readonly ILogger<WeatherForecastController> _logger;
@@ -18,9 +18,10 @@ namespace ChristopherBriddock.ApiEndpoints.Sample.Controllers
         }
 
         public override async Task<ActionResult> HandleAsync([FromBody] WeatherRequest request,
-                                                             [FromQuery] WeatherRequestParams param,
+                                                             [FromQuery] WeatherRequestQuery param,
                                                              CancellationToken cancellationToken = default)
         {
+            // For example: https://localhost:7080/weather?City="London"
             return await Task.FromResult(Ok());
         }
     }

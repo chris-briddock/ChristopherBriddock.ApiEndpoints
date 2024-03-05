@@ -12,19 +12,19 @@ public static class EndpointBaseAsync
 {
     public static class WithRequest<TRequest>
     {
-        public static class WithParam<TParam>
+        public static class WithQuery<TQuery>
         {
             public abstract class WithResult<TResponse> : EndpointBase
             {
                 public abstract Task<TResponse> HandleAsync(
-                    TRequest request, TParam param,
+                    TRequest request, TQuery param,
                     CancellationToken cancellationToken = default
                 );
             }
             public abstract class WithoutResult : EndpointBase
             {
                 public abstract Task HandleAsync(
-                    TRequest request, TParam param,
+                    TRequest request, TQuery param,
                     CancellationToken cancellationToken = default
                 );
             }
@@ -38,12 +38,12 @@ public static class EndpointBaseAsync
             public abstract class WithActionResult : EndpointBase
             {
                 public abstract Task<ActionResult> HandleAsync(
-                    TRequest request, TParam param,
+                    TRequest request, TQuery param,
                     CancellationToken cancellationToken = default
                 );
             }
         }
-        public static class WithoutParam
+        public static class WithoutQuery
         {
             public abstract class WithResult<TResponse> : EndpointBase
             {

@@ -1,6 +1,6 @@
 ﻿namespace ChristopherBriddock.ApiEndpoints.Sample
 {
-    public class WeatherRequestParams
+    public class WeatherRequestQuery
     {
         public string City { get; set; }
     }
